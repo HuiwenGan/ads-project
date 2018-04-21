@@ -8,7 +8,6 @@ Nowadays the statistics about endangered animals are most manually, for example,
 
 #### Algorithms
 __We plan to use the algorithms below__
-
 A Convolutional Neural Network (CNN) is comprised of one or more convolutional layers (often with a subsampling step) and then followed by one or more fully connected layers as in a standard multilayer neural network. We will use CNN to make our images  into 3 dimensions: width, height, depth to make  the architecture in a more sensible way.Then transforms one volume of activations to another through a differentiable function.  VGG-16 model is trained on a subset of the ImageNet database , which is used in the ImageNet Large-Scale Visual Recognition Challenge (ILSVRC). VGG-16 is trained on more than a million images and can classify images into 1000 object categories. We will use the model VGG-16 to make the enough layers. Then we will get the final data to classification.
 [CNN ](https://en.wikipedia.org/wiki/Convolutional_neural_network)
 [VGG-16](https://gist.github.com/baraldilorenzo/07d7802847aaad0a35d3)
@@ -17,3 +16,5 @@ A Convolutional Neural Network (CNN) is comprised of one or more convolutional l
 [I'm an inline-style link](https://www.google.com)
 #### Dataset
 We use webscraper to get the dataset from PEXELS website. PEXELS consists of documentary-style natural color photos depicting complex, we scraped a set of cats and dogs photographs from this site
+
+#### Preprocess
