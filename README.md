@@ -13,7 +13,7 @@ A Convolutional Neural Network (CNN) is comprised of one or more convolutional l
 [CNN ](https://en.wikipedia.org/wiki/Convolutional_neural_network)
 [VGG-16](https://gist.github.com/baraldilorenzo/07d7802847aaad0a35d3)
 ## Code With Documentation
-[Webcraper](https://github.com/HuiwenGan/ads-project/blob/master/cat%20and%20dogs%20pic.ipynb)
+[Webscraper](https://github.com/HuiwenGan/ads-project/blob/master/cat%20and%20dogs%20pic.ipynb)
 
 [Preprocess](https://github.com/HuiwenGan/ads-project/blob/master/PreProcess.ipynb)
 
