@@ -1,1 +1,1 @@
-# ads-project
+# Identification of Cats and Dogs Project
