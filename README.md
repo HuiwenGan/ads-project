@@ -17,5 +17,25 @@ A Convolutional Neural Network (CNN) is comprised of one or more convolutional l
 [I'm an inline-style link](https://www.google.com)
 #### Dataset
 We use webscraper to get the dataset from PEXELS website. PEXELS consists of documentary-style natural color photos depicting complex, we scraped a set of cats and dogs photographs from this site
+## Methods
 #### Preprocess
-We import the package of OpenCV,use cv2.IMREAD_COLOR  to preprocess the color of our images. We resize the size of images to 64*64.
+We import the package of OpenCV,use cv2.IMREAD_COLOR  to preprocess the color of our images, resize the size of images to 64*64, create the new label for our dataset and define the label of dogs is 1 and the label of cats is 0.
+We check our datasets show the images of them.
+## Results
+First, we try the model of VGG and we use four convolution filters and activation function is ‘sigmoid’, optimizer is ‘adam’, objective is 'binary_crossentropy'.
+We use eight Epochs and the final accuracy is 0.6869.
+
+And then we try more convolution filters, we changed the number from 4 to 8 and use RMSprop as optimizer.
+The final accuracy is higher than 4 convolution filters.
+
+ We try to change the pixel from 64*64 to 256*256
+ We found the epoch early stop at no.4 epoch.
+ The result is not very well.
+ 
+ We change Activation Function from 'relu' to 'sigmoid', then we get a little lower accuracy and costs a little more time.
+ We change the optimizer from 'RMSprop' to 'adam', then we find the convergence speed is much slower and the the accuracy is lower.
+ 
+ ## Discussion
+The best model we find should be resize the datasets to 64*64,build eight convolution filters with RMSprop as optimizer, binary_crossentropy as objective, sigmoid as activation function.
+Next we will try more convolution filters and other kernel_initializer to find if we can increase our accuracy.
+
