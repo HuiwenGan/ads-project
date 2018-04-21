@@ -28,7 +28,7 @@ We use eight Epochs and the final accuracy is 0.6869.
 * And then we try more convolution filters, we changed the number from 4 to 8 and use RMSprop as optimizer.
 The final accuracy is higher than 4 convolution filters.
 
-* We try to change the pixel from 64*64 to 256*256
+* We try to change the pixel from 64 * 64 to 256  *256
 We found the epoch early stop at no.4 epoch.
 The result is not very well.
  
@@ -37,7 +37,7 @@ The result is not very well.
 * We change the optimizer from 'RMSprop' to 'adam', then we find the convergence speed is much slower and the the accuracy is lower.
  
  ## Discussion
-The best model we find should be resize the datasets to 64*64,build eight convolution filters with RMSprop as optimizer, binary_crossentropy as objective, sigmoid as activation function.
+The best model we find should be resize the datasets to 64 * 64,build eight convolution filters with RMSprop as optimizer, binary_crossentropy as objective, sigmoid as activation function.
 Next we will try more convolution filters and other kernel_initializer to find if we can increase our accuracy.
 
 ## Reference
