@@ -22,20 +22,35 @@ We use webscraper to get the dataset from PEXELS website. PEXELS consists of doc
 We import the package of OpenCV,use cv2.IMREAD_COLOR  to preprocess the color of our images, resize the size of images to 64*64, create the new label for our dataset and define the label of dogs is 1 and the label of cats is 0.
 We check our datasets show the images of them.
 ## Results
-First, we try the model of VGG and we use four convolution filters and activation function is ‘sigmoid’, optimizer is ‘adam’, objective is 'binary_crossentropy'.
+* First, we try the model of VGG and we use four convolution filters and activation function is ‘sigmoid’, optimizer is ‘adam’, objective is 'binary_crossentropy'.
 We use eight Epochs and the final accuracy is 0.6869.
 
-And then we try more convolution filters, we changed the number from 4 to 8 and use RMSprop as optimizer.
+* And then we try more convolution filters, we changed the number from 4 to 8 and use RMSprop as optimizer.
 The final accuracy is higher than 4 convolution filters.
 
- We try to change the pixel from 64*64 to 256*256
- We found the epoch early stop at no.4 epoch.
- The result is not very well.
+* We try to change the pixel from 64*64 to 256*256
+We found the epoch early stop at no.4 epoch.
+The result is not very well.
  
- We change Activation Function from 'relu' to 'sigmoid', then we get a little lower accuracy and costs a little more time.
- We change the optimizer from 'RMSprop' to 'adam', then we find the convergence speed is much slower and the the accuracy is lower.
+* We change Activation Function from 'relu' to 'sigmoid', then we get a little lower accuracy and costs a little more time.
+
+* We change the optimizer from 'RMSprop' to 'adam', then we find the convergence speed is much slower and the the accuracy is lower.
  
  ## Discussion
 The best model we find should be resize the datasets to 64*64,build eight convolution filters with RMSprop as optimizer, binary_crossentropy as objective, sigmoid as activation function.
 Next we will try more convolution filters and other kernel_initializer to find if we can increase our accuracy.
 
+## Reference
+Zhang, Wei (1990). "Parallel distributed processing model with local space-invariant interconnections and its optical architecture". Applied Optics. 29 (32): 4790–7. Bibcode:1990ApOpt..29.4790Z. doi:10.1364/AO.29.004790. PMID 20577468.
+
+"Convolutional Neural Networks (LeNet) – DeepLearning 0.1 documentation". DeepLearning 0.1. LISA Lab. Retrieved 31 August 2013.
+
+Graham, Benjamin (2014-12-18). "Fractional Max-Pooling". arXiv:1412.6071  [cs.CV].
+
+LeCun, Yann; Bengio, Yoshua; Hinton, Geoffrey (2015). "Deep learning". Nature. 521 (7553): 436–444. Bibcode:2015Natur.521..436L. doi:10.1038/nature14539. PMID 26017442.
+
+Rock, Irvin. "The frame of reference." The legacy of Solomon Asch: Essays in cognition and social psychology (1990): 243–268.
+
+Cade Metz (May 18, 2016). "Google Built Its Very Own Chips to Power Its AI Bots". Wired.
+
+ 
