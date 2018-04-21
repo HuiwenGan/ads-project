@@ -15,7 +15,7 @@ A Convolutional Neural Network (CNN) is comprised of one or more convolutional l
 ## Code With Documentation
 [Preprocess](ads-project/ProjectCatDog.ipynb)
 
-[ProjectCatDog](ads-project/ProjectCatDog.ipynb)
+[ProjectCatDog](https://github.com/HuiwenGan/ads-project/blob/master/ProjectCatDog.ipynb)
 #### Dataset
 We use webscraper to get the dataset from PEXELS website. PEXELS consists of documentary-style natural color photos depicting complex, we scraped a set of cats and dogs photographs from this site
 ## Methods
